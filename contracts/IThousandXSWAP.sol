@@ -9,7 +9,7 @@ pragma solidity 0.6.12;
  * @dev see https://gitlab.com/musdasch/thousandxswap
  * @author Musdasch <musdasch@protonmail.com>
  */
-interface ISWAP {
+interface IThousandXSWAP {
     /**
      * @dev Returns the base token address.
      */

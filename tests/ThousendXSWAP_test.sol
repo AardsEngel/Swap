@@ -7,8 +7,8 @@ import "remix_accounts.sol";
 
 import "@openzeppelin/contracts@3.4.0/token/ERC20/IERC20.sol";
 
-import "../contracts/SWAP.sol";
-import "../contracts/ISWAP.sol";
+import "../contracts/ThousandXSWAP.sol";
+import "../contracts/IThousandXSWAP.sol";
 import "./TestToken.sol";
 
 contract testSuite {
@@ -19,8 +19,8 @@ contract testSuite {
 
     IERC20 baseToken;
 
-    ISWAP swap;
-    SWAP tswap;
+    IThousandXSWAP swap;
+    ThousandXSWAP tswap;
 
 
     function beforeAll() public {
@@ -32,7 +32,7 @@ contract testSuite {
         
         baseToken = new TestToken(1000000);
 
-        tswap = new SWAP(address(baseToken)); 
+        tswap = new ThousandXSWAP(address(baseToken)); 
         swap = tswap;
     }
 

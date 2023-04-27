@@ -6,9 +6,9 @@ import "@openzeppelin/contracts@3.4.0/access/Ownable.sol";
 import "@openzeppelin/contracts@3.4.0/math/SafeMath.sol";
 import "@openzeppelin/contracts@3.4.0/token/ERC20/IERC20.sol";
 
-import "./ISWAP.sol";
+import "./IThousandXSWAP.sol";
 
-contract SWAP is Ownable, SWAP {
+contract ThousandXSWAP is Ownable, IThousandXSWAP {
 
     address private _baseToken;
 
